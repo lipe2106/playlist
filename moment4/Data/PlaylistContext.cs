@@ -10,8 +10,7 @@
         {
         }
 
-        // Link Context to Collection model and add name to database tables
-        public DbSet<Song> Songs { get; set; }
-        public DbSet<Category> Categories { get; set; }
+        // Link Context to playlist model and add name to database table
+        public DbSet<Playlist> Playlist { get; set; }
     }
 }
