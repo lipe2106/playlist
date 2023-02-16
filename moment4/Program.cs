@@ -10,7 +10,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// Db connections
+// Db connection
 builder.Services.AddDbContext<PlaylistContext>(options =>
     options.UseMySql(builder.Configuration.GetConnectionString("PlaylistDbString"), new MySqlServerVersion(new Version())));
 
